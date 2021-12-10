@@ -4,7 +4,31 @@
 #include <ctime>
 using namespace std;
 
+const string PALAVRASECRETA = "secreta";
+
+bool letra_existe(char chute){
+    for(int i = 0; i < PALAVRASECRETA.size(); i++){
+        if(chute == PALAVRASECRETA[i]){
+            return true;
+        }
+    }
+    return false;
+}
+
 int main(){
-    string palavra_secreta = "secreta";
-    cout << palavra_secreta << endl;
+    cout << PALAVRASECRETA << endl;
+
+    bool nao_acertou = true;
+    bool nao_enforcou = true;
+
+    while(nao_acertou && nao_enforcou){
+        char chute;
+        cin >> chute;
+
+        if(letra_existe(chute)){
+            cout << "Você acertou! " << endl;
+        }else{
+            cout << "Você errou! " << endl;
+        }
+    }
 }
