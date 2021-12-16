@@ -6,71 +6,16 @@
 #include <fstream>
 #include <ctime>
 #include <cstdlib>
+
+#include "naoacertou.cpp"
+#include "letra_existe.cpp"
+
 using namespace std;
 
-string palavrasecreta = "secreta";
+string palavrasecreta;
 map<char, bool> chutou;
 vector<char> chuteerror;
 
-bool letra_existe(char chute){
-    for(char letra : palavrasecreta){
-        if(chute == letra) {
-            return true;
-        }
-    }
-    return false;
-}
-
-bool naoacertou(){
-    for(char letra : palavrasecreta){
-        if(!chutou[letra]){
-            return true;
-        }
-    }
-    return false;
-}
-
-bool naoenforcou(){
-    return chuteerror.size() < 5;
-}
-
-void imprime_cabecario(){
-    cout <<"*******************************************" << endl;
-    cout <<"**      Bem vindo ao Jogo da Forca       **" << endl;
-    cout <<"*******************************************" << endl;
-    cout << endl;
-}
-void imprime_error(){
-    cout << "Chutes errados: ";
-    for(char letra: chuteerror){
-        cout << letra << " ";
-    }
-    cout << endl;
-}
-void imprime_secreta(){
-    for(char letra : palavrasecreta){
-        if(chutou[letra]){
-            cout << letra << " ";
-        }else{
-            cout << "_ ";
-        }
-    }
-    cout << endl;
-}
-void chuta(){
-    cout << "Seu chute: ";
-    char chute;
-    cin >> chute;
-    chutou[chute] = true;
-
-    if(letra_existe(chute)){
-        cout << "Você acertou! " << endl;
-    }else{
-        cout << "Você errou! Seu chute não está na palavra!" << endl;
-        chuteerror.push_back(chute);
-    }
-    cout << endl;
-}
 
    vector<string> le_arquivo() {
     ifstream arquivo;
