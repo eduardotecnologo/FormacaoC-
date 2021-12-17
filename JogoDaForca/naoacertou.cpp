@@ -1,4 +1,5 @@
 #include <string>
+#include <map>
 
 std::string palavrasecreta;
 std::map<char, bool> chutou;
