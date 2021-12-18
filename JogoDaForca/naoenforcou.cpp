@@ -1,7 +1,7 @@
 #include <string>
 #include <vector>
 
-std::vector<char> chuteerror;
+extern std::vector<char> chuteerror;
 
 bool naoenforcou(){
     return chuteerror.size() < 5;

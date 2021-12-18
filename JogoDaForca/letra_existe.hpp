@@ -1,1 +1,3 @@
-void letra_existe(char chute);
+#pragma once
+
+bool letra_existe(char chute);

@@ -2,23 +2,19 @@
 #include <string>
 #include <map>
 #include <vector>
-#include <cstdlib>
 #include <fstream>
 #include <ctime>
 #include <cstdlib>
-
-// Definição de Funções
-#include "naoacertou.hpp"
 #include "letra_existe.hpp"
 #include "imprime_cabecario.hpp"
 #include "ler_arquivo.hpp"
 #include "sorteio.hpp"
-#include "chuta.hpp"
+#include "naoenforcou.hpp"
 #include "imprime_error.hpp"
 #include "imprime_secreta.hpp"
+#include "chuta.hpp"
+#include "adiciona_palavra.hpp"
 #include "naoacertou.hpp"
-#include "naoenforcou.hpp"
-#include "salvar_arquivo.hpp"
 
 using namespace std;
 
@@ -49,6 +45,6 @@ int main(){
             adiciona_palavra();
             }
         }
-    }
     cin.get();
+    }
 }

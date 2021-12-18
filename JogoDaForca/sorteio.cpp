@@ -1,11 +1,12 @@
 #include <vector>
 #include <string>
-#include <ler_arquivo.hpp>
+#include <ctime>
+#include "ler_arquivo.hpp"
 
-std::string palavrasecreta;
+extern std::string palavrasecreta;
 
 void sorteio(){
-    std::vector<string> palavras = le_arquivo();
+    std::vector<std::string> palavras = ler_arquivo();
     
     srand(time(NULL));
     

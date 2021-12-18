@@ -1,7 +1,9 @@
 #include <iostream>
+#include <string>
+#include <map>
 
-std::string palavrasecreta;
-
+extern std::string palavrasecreta;
+extern std::map<char, bool> chutou;
 
 void imprime_secreta(){
     for(char letra : palavrasecreta){

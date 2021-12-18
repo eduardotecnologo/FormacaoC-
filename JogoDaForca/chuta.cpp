@@ -1,16 +1,17 @@
 #include <iostream>
-#include <map>
 #include <vector>
+#include <map>
 
-#include <letra_existe.hpp>
+#include "letra_existe.hpp"
 
-std::map<char, bool> chutou;
-std::vector<char> chuteerror;
+extern std::map<char, bool> chutou;
+extern std::vector<char> chuteerror;
 
 void chuta(){
     std::cout << "Seu chute: ";
     char chute;
     std::cin >> chute;
+    
     chutou[chute] = true;
 
     if(letra_existe(chute)){

@@ -9,7 +9,7 @@ void adiciona_palavra(){
     std::string nova_palavra;
     std::cin >> nova_palavra;
     
-    std::vector<string> lista_palavras = le_arquivo();
+    std::vector<std::string> lista_palavras = ler_arquivo();
     lista_palavras.push_back(nova_palavra);
     salvar_arquivo(lista_palavras);
 }
