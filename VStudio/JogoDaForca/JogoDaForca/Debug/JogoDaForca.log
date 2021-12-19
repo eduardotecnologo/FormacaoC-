@@ -1,2 +1,10 @@
-﻿  index.cpp
-  JogoDaForca.vcxproj -> E:\Developer\FormacaoCPP\VStudio\JogoDaForca\Debug\JogoDaForca.exe
+﻿  adiciona_palavra.cpp
+  chuta.cpp
+  imprime_secreta.cpp
+  index.cpp
+  ler_arquivo.cpp
+  letra_existe.cpp
+  sorteio.cpp
+E:\Developer\Alura\FormacaoCPP\VStudio\JogoDaForca\JogoDaForca\sorteio.cpp(10,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  JogoDaForca.vcxproj -> E:\Developer\Alura\FormacaoCPP\VStudio\JogoDaForca\Debug\JogoDaForca.exe

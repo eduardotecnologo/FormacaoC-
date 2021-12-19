@@ -27,7 +27,6 @@
     <ClCompile Include="ler_arquivo.cpp" />
     <ClCompile Include="letra_existe.cpp" />
     <ClCompile Include="naoacertou.cpp" />
-    <ClCompile Include="naoenforcou.cpp" />
     <ClCompile Include="salvar_arquivo.cpp" />
     <ClCompile Include="sorteio.cpp" />
   </ItemGroup>
@@ -40,7 +39,6 @@
     <ClInclude Include="ler_arquivo.h" />
     <ClInclude Include="letra_existe.h" />
     <ClInclude Include="naoacertou.h" />
-    <ClInclude Include="naoenforcou.h" />
     <ClInclude Include="salvar_arquivo.h" />
     <ClInclude Include="sorteio.h" />
   </ItemGroup>

@@ -1,3 +1,3 @@
 #pragma once
 
-bool naoacertou();
+bool naoacertou(std::string palavrasecreta, std::map<char, bool> chutou);

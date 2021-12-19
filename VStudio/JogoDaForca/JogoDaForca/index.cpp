@@ -8,7 +8,6 @@
 #include "imprime_cabecario.h"
 #include "ler_arquivo.h"
 #include "sorteio.h"
-#include "naoenforcou.h"
 #include "imprime_error.h"
 #include "imprime_secreta.h"
 #include "chuta.h"
@@ -23,17 +22,16 @@ vector<char> chuteerror;
 
 int main() {
     imprime_cabecario();
-    ler_arquivo();
-    sorteio();
+    palavrasecreta = sorteio();
 
-    while (naoacertou() && naoenforcou()) {
-        imprime_error();
-        imprime_secreta();
-        chuta();
+    while (naoacertou(palavrasecreta, chutou) && chuteerror.size() < 10) {
+        imprime_error(chuteerror);
+        imprime_secreta(palavrasecreta, chutou);
+        chuta(&chutou, &chuteerror);
 
         cout << "Fim deJogo! " << endl;
         cout << "A palavra secreta era: " << palavrasecreta << endl;
-        if (naoacertou()) {
+        if (naoacertou(palavrasecreta, chutou)) {
             cout << "Você perdeu! Tente novamente!" << endl;
         }
         else {

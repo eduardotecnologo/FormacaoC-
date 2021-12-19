@@ -1,3 +1,4 @@
 #pragma
+#include <string>
 
-void sorteio();
+std::string sorteio();

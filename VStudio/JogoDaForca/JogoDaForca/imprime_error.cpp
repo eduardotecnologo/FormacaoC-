@@ -1,9 +1,7 @@
 #include <iostream>
-#include <vector>
+#include "imprime_error.h"
 
-extern std::vector<char> chuteerror;
-
-void imprime_error() {
+void imprime_error(std::vector<char> chuteerror) {
     std::cout << "Chutes errados: ";
     for (char letra : chuteerror) {
         std::cout << letra << " ";
