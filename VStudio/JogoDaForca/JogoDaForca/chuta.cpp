@@ -8,12 +8,12 @@
 //extern std::map<char, bool> chutou;
 //extern std::vector<char> chuteerror;
 
-void chuta(std::map<char, bool>* chutou, std::vector<char>* chuteerror) {
+void chuta(std::map<char, bool>& chutou, std::vector<char>& chuteerror) {
     std::cout << "Seu chute: ";
     char chute;
     std::cin >> chute;
 
-    (*chutou)[chute] = true;
+    chutou[chute] = true;
 
     if (letra_existe(chute)) {
         std::cout << "Você acertou! " << std::endl;
@@ -21,7 +21,7 @@ void chuta(std::map<char, bool>* chutou, std::vector<char>* chuteerror) {
     else {
         std::cout << "Você errou! Seu chute não está na palavra!" << std::endl;
         //(*chuteerror).push_back(chute);
-        chuteerror -> push_back(chute);
+        chuteerror.push_back(chute);
     }
     std::cout << std::endl;
 }

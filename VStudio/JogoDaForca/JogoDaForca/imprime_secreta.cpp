@@ -4,9 +4,9 @@
 //extern std::string palavrasecreta;
 //extern std::map<char, bool> chutou;
 
-void imprime_secreta(std::string palavrasecreta, std::map<char, bool> chutou) {
+void imprime_secreta(const std::string& palavrasecreta, const std::map<char, bool>& chutou) {
     for (char letra : palavrasecreta) {
-        if (chutou[letra]) {
+        if (chutou.find(letra) == chutou.end() || !chutou.at(letra)) {
             std::cout << letra << " ";
         }
         else {
@@ -15,3 +15,5 @@ void imprime_secreta(std::string palavrasecreta, std::map<char, bool> chutou) {
     }
     std::cout << std::endl;
 }
+
+//(chutou.find(letra) == chutou.end() || !chutou.at(letra)) 
