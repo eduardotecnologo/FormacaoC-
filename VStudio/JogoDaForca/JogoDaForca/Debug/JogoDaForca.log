@@ -1,6 +1,8 @@
-﻿  index.cpp
-E:\Developer\Alura\FormacaoCPP\VStudio\JogoDaForca\JogoDaForca\index.cpp(30,49): error C2660: 'chuta': function does not take 3 arguments
+﻿  adiciona_palavra.cpp
+  index.cpp
+E:\Developer\Alura\FormacaoCPP\VStudio\JogoDaForca\JogoDaForca\index.cpp(29,49): error C2660: 'chuta': function does not take 3 arguments
 E:\Developer\Alura\FormacaoCPP\VStudio\JogoDaForca\JogoDaForca\chuta.h(5,6): message : see declaration of 'chuta'
+  ler_arquivo.cpp
   sorteio.cpp
 E:\Developer\Alura\FormacaoCPP\VStudio\JogoDaForca\JogoDaForca\sorteio.cpp(10,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Generating Code...

@@ -4,7 +4,6 @@
 #include <vector>
 #include <fstream>
 #include <cstdlib>
-#include "letra_existe.h"
 #include "imprime_cabecario.h"
 #include "ler_arquivo.h"
 #include "sorteio.h"
@@ -25,7 +24,7 @@ int main() {
     palavrasecreta = sorteio();
 
     while (naoacertou(palavrasecreta, chutou) && chuteerror.size() < 10) {
-        imprime_error(chuteerror);
+        Forca::imprime_error(chuteerror);
         imprime_secreta(palavrasecreta, chutou);
         chuta(chutou, chuteerror, palavrasecreta);
 
