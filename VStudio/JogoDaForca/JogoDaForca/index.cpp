@@ -16,9 +16,9 @@
 
 using namespace std;
 
-string palavrasecreta;
-map<char, bool> chutou; 
-vector<char> chuteerror;
+static string palavrasecreta;
+static map<char, bool> chutou; 
+static vector<char> chuteerror;
 
 int main() {
     imprime_cabecario();
@@ -27,7 +27,7 @@ int main() {
     while (naoacertou(palavrasecreta, chutou) && chuteerror.size() < 10) {
         imprime_error(chuteerror);
         imprime_secreta(palavrasecreta, chutou);
-        chuta(&chutou, &chuteerror);
+        chuta(chutou, chuteerror, palavrasecreta);
 
         cout << "Fim deJogo! " << endl;
         cout << "A palavra secreta era: " << palavrasecreta << endl;
