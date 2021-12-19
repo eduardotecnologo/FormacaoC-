@@ -25,7 +25,7 @@ int main() {
 
     while (naoacertou(palavrasecreta, chutou) && chuteerror.size() < 10) {
         Forca::imprime_error(chuteerror);
-        imprime_secreta(palavrasecreta, chutou);
+        Forca::imprime_secreta(palavrasecreta, chutou);
         chuta(chutou, chuteerror, palavrasecreta);
 
         cout << "Fim deJogo! " << endl;
