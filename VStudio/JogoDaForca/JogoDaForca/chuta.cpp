@@ -8,7 +8,7 @@
 //extern std::map<char, bool> chutou;
 //extern std::vector<char> chuteerror;
 
-void chuta(std::map<char, bool>& chutou, std::vector<char>& chuteerror) {
+void Forca::chuta(std::map<char, bool>& chutou, std::vector<char>& chuteerror) {
     std::cout << "Seu chute: ";
     char chute;
     std::cin >> chute;

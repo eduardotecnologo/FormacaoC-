@@ -4,7 +4,7 @@
 //extern std::string palavrasecreta;
 //extern std::map<char, bool> chutou;
 
-void imprime_secreta(const std::string& palavrasecreta, const std::map<char, bool>& chutou) {
+void Forca::imprime_secreta(const std::string& palavrasecreta, const std::map<char, bool>& chutou) {
     for (char letra : palavrasecreta) {
         if (chutou.find(letra) == chutou.end() || !chutou.at(letra)) {
             std::cout << letra << " ";
