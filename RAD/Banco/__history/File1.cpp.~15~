@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+struct Conta{
+	string numero;
+	string cpfTitular;
+	string nomeTitular;
+	float saldo;
+};
+
+int main(){
+    Conta umaConta;
+	string numeroConta = "123456";
+	string cpfTitular = "123.456.789-19";
+	string nomeTitular = "Eduardo";
+	float saldo = 100;
+
+    return 0;
+}
