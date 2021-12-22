@@ -8,26 +8,26 @@ struct Conta{
 	string cpfTitular;
 	string nomeTitular;
 	float saldo;
-};
 
-void sacar(Conta& conta, float valorASacar){
+	void sacar(float valorASacar){
 	if(valorASacar < 15){
 		cout << "Ops! Não é possível sacar valores abaixo de R$15,00" << endl;
-	}else if(valorASacar > conta.saldo){
-        cout << "Ops! Você não possui saldo suficiente." << endl;
-	}else{
-        conta.saldo -= valorASacar;
-	}
+		}else if(valorASacar > saldo){
+			cout << "Ops! Você não possui saldo suficiente." << endl;
+		}else{
+			saldo -= valorASacar;
+		}
 
-}
+	};
 
-void depositar(Conta& conta, float valorADepositar){
-	if(valorADepositar < 10){
-		cout << "Ops! Não é possível depositar valores abaixo de R$10,00" << endl;
-	}else{
-		conta.saldo += valorADepositar;
-	}
-}
+	void depositar(float valorADepositar){
+		if(valorADepositar < 10){
+			cout << "Ops! Não é possível depositar valores abaixo de R$10,00" << endl;
+		}else{
+			saldo += valorADepositar;
+		}
+	};
+
 
 int main(){
 	Conta umaConta;
@@ -40,9 +40,12 @@ int main(){
 
 	outraConta.saldo = 200;
 
-	depositar(outraConta, 500);
+	outraConta.depositar(500);
+	outraConta.sacar(200);
 
 	cout << "Uma conta: " << umaConta.saldo << " Outra conta: " << outraConta.saldo<< endl;
 
 	system("PAUSE");
-}
+
+	}
+};

@@ -1,8 +1,22 @@
 ﻿#include <iostream>
 #include <string>
-#include "Conta.h"
 
 using namespace std;
+
+struct Conta{	
+	string numero;
+	string cpfTitular;
+	string nomeTitular;
+	float saldo;
+
+	void depositar(float valorADepositar){
+		if(valorADepositar < 10){
+			cout << "Ops! N�o � poss�vel depositar valores abaixo de R$10,00" << endl;
+		}else{
+			saldo += valorADepositar;
+		}
+	};
+
 
 int main(){
 	Conta umaConta;
@@ -21,4 +35,5 @@ int main(){
 	cout << "Uma conta: " << umaConta.saldo << " Outra conta: " << outraConta.saldo<< endl;
 
 	system("PAUSE");
+	}
 };

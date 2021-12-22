@@ -1,8 +1,18 @@
 ﻿#include <iostream>
 #include <string>
-#include "Conta.h"
 
 using namespace std;
+
+struct Conta{	
+	string numero;
+	string cpfTitular;
+	string nomeTitular;
+	float saldo;
+
+	void depositar(float valorADepositar){
+		
+	};
+
 
 int main(){
 	Conta umaConta;
@@ -21,4 +31,5 @@ int main(){
 	cout << "Uma conta: " << umaConta.saldo << " Outra conta: " << outraConta.saldo<< endl;
 
 	system("PAUSE");
+	}
 };

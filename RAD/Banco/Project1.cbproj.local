@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021/12/21 19:59:16.918,=E:\Developer\Alura\FormacaoCPP\RAD\Project1PCH1.h</Transaction>
+    <Transaction>2021/12/21 19:59:17.633,=E:\Developer\Alura\FormacaoCPP\RAD\File1.cpp</Transaction>
+    <Transaction>2021/12/21 19:59:38.401,E:\Developer\Alura\FormacaoCPP\RAD\Banco\File1.cpp=E:\Developer\Alura\FormacaoCPP\RAD\File1.cpp</Transaction>
+    <Transaction>2021/12/21 20:46:49.948,E:\Developer\Alura\FormacaoCPP\RAD\Banco\main.cpp=E:\Developer\Alura\FormacaoCPP\RAD\Banco\File1.cpp</Transaction>
+    <Transaction>2021/12/22 07:52:56.261,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Project1PCH1.h=E:\Developer\Alura\FormacaoCPP\RAD\Project1PCH1.h</Transaction>
+    <Transaction>2021/12/22 07:53:03.062,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Project1.cbproj=E:\Developer\Alura\FormacaoCPP\RAD\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
