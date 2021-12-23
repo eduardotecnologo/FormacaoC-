@@ -19,14 +19,7 @@
 		}
  }
 
- float Conta::getSaldo() const{
+ float Conta::getSaldo(){
             return saldo;
 		}
 
- void Conta::setNomeTitular(std::string nome){
-    nomeTitular = nome;
-}
-
- void Conta::setCpfTitular(std::string cpf){
-    cpfTitular = cpf;
-}

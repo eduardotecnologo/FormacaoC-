@@ -6,8 +6,7 @@ using namespace std;
 
 int main(){
 	Conta umaConta;
-	umaConta.setNomeTitular("Eduardo");
-    umaConta.setCpfTitular("123.456.789-19");
+    umaConta.setNomeTitular("Eduardo");
 	Conta outraConta;
 
 

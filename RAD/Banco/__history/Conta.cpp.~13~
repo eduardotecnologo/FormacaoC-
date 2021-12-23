@@ -13,20 +13,13 @@
 
  void Conta::depositar(float valorADepositar){
 	if(valorADepositar < 10){
-			std::cout << "Ops! Não é possível depositar valores abaixo de R$10,00" << std::endl;
+			std::cout << "Ops! N�o � poss�vel depositar valores abaixo de R$10,00" << std::endl;
 		}else{
 			saldo += valorADepositar;
 		}
- }
 
- float Conta::getSaldo() const{
+        float getSaldo(){
             return saldo;
 		}
+ }
 
- void Conta::setNomeTitular(std::string nome){
-    nomeTitular = nome;
-}
-
- void Conta::setCpfTitular(std::string cpf){
-    cpfTitular = cpf;
-}

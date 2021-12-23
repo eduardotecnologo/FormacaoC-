@@ -1,9 +1,0 @@
-#inclui "Conta.h"
-
- void Conta::sacar(float valorASacar){
-
- }
-
- void Conta::depositar(float valorADepositar){
-
- }
