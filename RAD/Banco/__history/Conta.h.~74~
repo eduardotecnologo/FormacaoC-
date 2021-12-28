@@ -4,10 +4,10 @@
 class Conta{
 private:
 	std::string numero;
-	std::string nomeTitular;
 	std::string cpfTitular;
+	std::string nomeTitular;
 
-	float saldo;
+	float saldo = 0;
 
 public:
 	Conta(std::string numero, std::string nomeTitular, std::string cpfTitular);
@@ -17,8 +17,6 @@ public:
 
 	float getSaldo() const;
 	//void setNumeroConta(std::string numeroConta);
-
-	void getNomeTitular();
 	void setNomeTitular(std::string nomeTitular);
 	void setCpfTitular(std::string cpfTitular);
 

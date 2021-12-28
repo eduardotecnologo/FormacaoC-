@@ -14,7 +14,7 @@ int main(){
 	umaConta.depositar(500);
 	umaConta.sacar(200);
 
-	cout << "Uma conta: " << umaConta.getSaldo()<< endl;
+	cout << "Uma conta: " << umaConta.getSaldo() << " Outra conta: " << outraConta.getSaldo() << endl;
 
 	system("PAUSE");
 }

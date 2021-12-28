@@ -8,13 +8,20 @@ void exibeSaldo(const Conta& conta){
     cout << "O saldo da conta é: " << conta.getSaldo();
 }
 
+void exibeSaldo(float saldo){
+
+}
+
 int main(){
 	Conta umaConta("123456", "Eduardo", "123.456.789-10");
+    exibeSaldo(conta);
+	Conta outraConta("789456", "Alexandre", "333.456.789-10");
 
-	umaConta.depositar(500);
-	umaConta.sacar(200);
 
-	cout << "Uma conta: " << umaConta.getSaldo()<< endl;
+	outraConta.depositar(500);
+	outraConta.sacar(200);
+
+	cout << "Uma conta: " << umaConta.getSaldo() << " Outra conta: " << outraConta.getSaldo() << endl;
 
 	system("PAUSE");
 }
