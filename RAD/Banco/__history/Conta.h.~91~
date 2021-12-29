@@ -4,10 +4,8 @@
 class Conta{
 private:
 	static int numeroDeContas;
-
 public:
-	static int getNumeroDeConta();
-
+    static int getNumeroDeConta();
 private:
 	std::string numero;
 	std::string nomeTitular;

@@ -2,23 +2,25 @@
 #include <string>
 
 class Conta{
+public:
+    int numeroDeContas;
 private:
 	std::string numero;
-    std::string nomeTitular;
+	std::string nomeTitular;
 	std::string cpfTitular;
 
-
-	float saldo = 0;
+	float saldo;
 
 public:
 	Conta(std::string numero, std::string nomeTitular, std::string cpfTitular);
 
 	void sacar(float valorSacar);
 	void depositar(float valorADepositar);
-
 	float getSaldo() const;
-	//void setNumeroConta(std::string numeroConta);
-	void setNomeTitular(std::string nomeTitular);
-	void setCpfTitular(std::string cpfTitular);
+    void setNomeTitular(std::string nome);
 
+	/*void setNumeroConta(std::string numeroConta);
+	void getNomeTitular();
+	void setNomeTitular(std::string nomeTitular);
+	void setCpfTitular(std::string cpfTitular); */
 };

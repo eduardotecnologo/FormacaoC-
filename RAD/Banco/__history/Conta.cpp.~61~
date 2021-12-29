@@ -1,13 +1,21 @@
 ﻿#include "Conta.h"
 #include <iostream>
 
-Conta::Conta(std::string numero, std::string nomeTitular, std::string cpfTitular):
-	numero(numero), nomeTitular(nomeTitular),cpfTitular(cpfTitular){
-    // Alternativa ao this ->
+int Conta::numeroDeContas = 0;
+
+Conta::Conta(std::string numero, std::string nomeTitular, std::string cpfTitular)
+	// Alternativa ao this -> (Lista de inicialização)
+	:numero(numero),
+	 nomeTitular(nomeTitular),
+	 cpfTitular(cpfTitular),
+	 saldo(0){
+
+     numeroDeContas++;
    /*this -> numero = numero;
-   this -> nomeTitular = nomeTitular;
-   this -> cpfTitular  = cpfTitular;
-   this -> saldo = 0;*/
+	 this -> nomeTitular = nomeTitular;
+	 this -> cpfTitular  = cpfTitular;
+	 this -> saldo = 0;
+   */
 }
 
  void Conta::sacar(float valorASacar){
@@ -36,9 +44,13 @@ Conta::Conta(std::string numero, std::string nomeTitular, std::string cpfTitular
     nomeTitular = nome;
 }
 
- void Conta::setCpfTitular(std::string cpf){
-    cpfTitular = cpf;
+int Conta::getNumeroDeConta(){
+    return numeroDeConta;
 }
+
+ /*void Conta::setCpfTitular(std::string cpf){
+	cpfTitular = cpf;
+}*/
 
 
  /*void Conta::setNumeroConta(std::string numero){

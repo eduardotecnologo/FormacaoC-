@@ -2,13 +2,17 @@
 #include <iostream>
 
 Conta::Conta(std::string numero, std::string nomeTitular, std::string cpfTitular)
-	// Alternativa ao this ->
-	:numero(numero), nomeTitular(nomeTitular),cpfTitular(cpfTitular), saldo(0){
-
+	// Alternativa ao this -> (Lista de inicialização)
+	:numero(numero),
+	 nomeTitular(nomeTitular),
+	 cpfTitular(cpfTitular),
+	 saldo(0){
+     int numeroDeContas++;
    /*this -> numero = numero;
-   this -> nomeTitular = nomeTitular;
-   this -> cpfTitular  = cpfTitular;
-   this -> saldo = 0;*/
+	 this -> nomeTitular = nomeTitular;
+	 this -> cpfTitular  = cpfTitular;
+	 this -> saldo = 0;
+   */
 }
 
  void Conta::sacar(float valorASacar){

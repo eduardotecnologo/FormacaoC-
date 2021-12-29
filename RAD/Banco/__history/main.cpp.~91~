@@ -21,7 +21,7 @@ int main(){
 
 	cout << "Uma outra conta: " << outraConta.getSaldo()<< endl;
 
-    cout << "Número de contas: " << Conta::getNumeroDeConta() << endl;
+    cout << "Número de contas: " << outraConta.numeroDeContas << endl;
 
 	system("PAUSE");
 }
