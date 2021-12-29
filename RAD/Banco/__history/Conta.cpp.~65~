@@ -3,18 +3,13 @@
 
 int Conta::numeroDeContas = 0;
 
-  Conta::Conta(std::string numero,Titular titular)
-//Conta::Conta(std::string numero, std::string nomeTitular, std::string cpfTitular)
+Conta::Conta(std::string numero, std::string nomeTitular, std::string cpfTitular)
 	// Alternativa ao this -> (Lista de inicialização)
 	:numero(numero),
-	titular(titular),
-
-
-	 //nomeTitular(nomeTitular),
-	 //cpfTitular(cpfTitular),
-
+	 nomeTitular(nomeTitular),
+	 cpfTitular(cpfTitular),
 	 saldo(0){
-	 numeroDeContas++;
+     numeroDeContas++;
    /*this -> numero = numero;
 	 this -> nomeTitular = nomeTitular;
 	 this -> cpfTitular  = cpfTitular;
@@ -43,6 +38,10 @@ int Conta::numeroDeContas = 0;
  float Conta::getSaldo() const{
 			return saldo;
 		}
+
+ void Conta::setNomeTitular(std::string nome){
+    nomeTitular = nome;
+}
 
 int Conta::getNumeroDeConta(){
     return numeroDeContas;

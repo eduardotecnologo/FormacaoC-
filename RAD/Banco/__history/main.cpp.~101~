@@ -17,7 +17,8 @@ int main(){
 
 	cout << "Uma conta: " << umaConta.getSaldo()<< endl;
 
-	Conta outraConta("654321", Titular("987.654,321-10","Alexandre"));
+	Titular titular();
+	Conta outraConta("654321", titular("987.654,321-10","Alexandre"));
 	outraConta.depositar(300);
 	outraConta.sacar(50);
 
