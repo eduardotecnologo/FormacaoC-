@@ -7,14 +7,12 @@ int Conta::numeroDeContas = 0;
 //Conta::Conta(std::string numero, std::string nomeTitular, std::string cpfTitular)
 	// Alternativa ao this -> (Lista de inicialização)
 	:numero(numero),
-	titular(titular),
-
-
+	Titular(titular),
 	 //nomeTitular(nomeTitular),
 	 //cpfTitular(cpfTitular),
-
 	 saldo(0){
 	 numeroDeContas++;
+     verificaTamanhoNome();
    /*this -> numero = numero;
 	 this -> nomeTitular = nomeTitular;
 	 this -> cpfTitular  = cpfTitular;
@@ -44,8 +42,19 @@ int Conta::numeroDeContas = 0;
 			return saldo;
 		}
 
+ void Conta::setNomeTitular(std::string nome){
+    nomeTitular = nome;
+}
+
 int Conta::getNumeroDeConta(){
     return numeroDeContas;
+}
+
+void Conta::verificaTamanhoNome(){
+	if(nomeTitular.size() < 5){
+		std::cout << "Ops! Nome muito curto." << std::endl;
+		exit(1);
+	 }
 }
 
  /*void Conta::setCpfTitular(std::string cpf){

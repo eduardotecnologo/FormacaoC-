@@ -15,6 +15,7 @@ int Conta::numeroDeContas = 0;
 
 	 saldo(0){
 	 numeroDeContas++;
+     verificaTamanhoNome();
    /*this -> numero = numero;
 	 this -> nomeTitular = nomeTitular;
 	 this -> cpfTitular  = cpfTitular;

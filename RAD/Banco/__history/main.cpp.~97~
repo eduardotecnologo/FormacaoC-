@@ -1,7 +1,6 @@
 ﻿#include <iostream>
 #include <string>
 #include "Conta.h"
-#include "Titular.h"
 
 using namespace std;
 
@@ -17,7 +16,7 @@ int main(){
 
 	cout << "Uma conta: " << umaConta.getSaldo()<< endl;
 
-	Conta outraConta("654321", Titular("987.654,321-10","Alexandre"));
+	Conta outraConta("654321", "Alex", "987.654.321-10");
 	outraConta.depositar(300);
 	outraConta.sacar(50);
 
