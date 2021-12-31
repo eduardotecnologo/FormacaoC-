@@ -3,15 +3,25 @@
 	<Transactions>
     <Transaction>2021/12/21 19:59:16.000.918,=E:\Developer\Alura\FormacaoCPP\RAD\Project1PCH1.h</Transaction>
     <Transaction>2021/12/21 19:59:17.000.633,=E:\Developer\Alura\FormacaoCPP\RAD\File1.cpp</Transaction>
-    <Transaction>2021/12/21 19:59:38.000.401,E:\Developer\Alura\FormacaoCPP\RAD\Banco\File1.cpp=E:\Developer\Alura\FormacaoCPP\RAD\File1.cpp</Transaction>
-    <Transaction>2021/12/21 20:46:49.000.948,E:\Developer\Alura\FormacaoCPP\RAD\Banco\main.cpp=E:\Developer\Alura\FormacaoCPP\RAD\Banco\File1.cpp</Transaction>
-    <Transaction>2021/12/22 07:52:56.000.261,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Project1PCH1.h=E:\Developer\Alura\FormacaoCPP\RAD\Project1PCH1.h</Transaction>
-    <Transaction>2021/12/22 07:53:03.000.062,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Project1.cbproj=E:\Developer\Alura\FormacaoCPP\RAD\Project1.cbproj</Transaction>
+    <Transaction>2021/12/21 19:59:38.000.401,E:\Developer\Alura\FormacaoCPP\RAD\File1.cpp=E:\Developer\Alura\FormacaoCPP\RAD\Banco\File1.cpp</Transaction>
+    <Transaction>2021/12/21 20:46:49.000.948,E:\Developer\Alura\FormacaoCPP\RAD\Banco\File1.cpp=E:\Developer\Alura\FormacaoCPP\RAD\Banco\main.cpp</Transaction>
+    <Transaction>2021/12/22 07:52:56.000.261,E:\Developer\Alura\FormacaoCPP\RAD\Project1PCH1.h=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Project1PCH1.h</Transaction>
+    <Transaction>2021/12/22 07:53:03.000.062,E:\Developer\Alura\FormacaoCPP\RAD\Project1.cbproj=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Project1.cbproj</Transaction>
     <Transaction>2021/12/22 09:15:44.000.204,=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.cpp</Transaction>
-    <Transaction>2021/12/22 09:16:02.000.872,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.h=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Conta.h</Transaction>
-    <Transaction>2021/12/22 09:16:02.000.872,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.cpp=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Conta.cpp</Transaction>
+    <Transaction>2021/12/22 09:16:02.000.872,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Conta.h=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.h</Transaction>
+    <Transaction>2021/12/22 09:16:02.000.872,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Conta.cpp=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.cpp</Transaction>
     <Transaction>2021/12/22 09:20:24.000.983,=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.cpp</Transaction>
-    <Transaction>2021/12/22 09:20:41.000.037,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.h=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Conta.h</Transaction>
-    <Transaction>2021/12/22 09:20:41.000.037,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.cpp=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Conta.cpp</Transaction>
+    <Transaction>2021/12/22 09:20:41.000.037,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Conta.cpp=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.cpp</Transaction>
+    <Transaction>2021/12/22 09:20:41.000.037,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Conta.h=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.h</Transaction>
+    <Transaction>2021/12/29 20:06:50.251,=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.cpp</Transaction>
+    <Transaction>2021/12/29 20:07:07.699,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Titular.h=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.h</Transaction>
+    <Transaction>2021/12/29 20:07:07.699,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Titular.cpp=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.cpp</Transaction>
+    <Transaction>2021/12/29 20:09:30.263,=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.pas</Transaction>
+    <Transaction>2021/12/29 20:09:47.412,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Titulo.pas=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.pas</Transaction>
+    <Transaction>2021/12/29 20:13:31.472,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Titulo.h=</Transaction>
+    <Transaction>2021/12/29 20:13:39.366,=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.pas</Transaction>
+    <Transaction>2021/12/29 21:03:29.086,=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.cpp</Transaction>
+    <Transaction>2021/12/29 21:03:37.162,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Cpf.h=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.h</Transaction>
+    <Transaction>2021/12/29 21:03:37.162,E:\Developer\Alura\FormacaoCPP\RAD\Banco\Cpf.cpp=E:\Developer\Alura\FormacaoCPP\RAD\Banco\Unit1.cpp</Transaction>
   </Transactions>
 </BorlandProject>

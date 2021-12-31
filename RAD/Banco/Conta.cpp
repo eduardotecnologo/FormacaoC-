@@ -4,32 +4,27 @@
 int Conta::numeroDeContas = 0;
 
   Conta::Conta(std::string numero,Titular titular)
-//Conta::Conta(std::string numero, std::string nomeTitular, std::string cpfTitular)
-	// Alternativa ao this -> (Lista de inicialização)
-	:numero(numero),
-	titular(titular),
-
-
-	 //nomeTitular(nomeTitular),
-	 //cpfTitular(cpfTitular),
-
+     :numero(numero),
+	 titular(titular),
 	 saldo(0){
 	 numeroDeContas++;
-   /*this -> numero = numero;
-	 this -> nomeTitular = nomeTitular;
-	 this -> cpfTitular  = cpfTitular;
-	 this -> saldo = 0;
-   */
 }
 
  void Conta::sacar(float valorASacar){
-    if(valorASacar < 15){
+	    if(valorASacar < 15){
 		std::cout << "Ops! Não é possível sacar valores abaixo de R$15,00" << std::endl;
-		}else if(valorASacar > saldo){
-			std::cout << "Ops! Você nãoo possui saldo suficiente." << std::endl;
-		}else{
-			saldo -= valorASacar;
+		return;
 		}
+
+		float tarifaSaque = valorASacar * 0.05;
+		float valorDoSaque = valorASacar + tarifaSaque;
+		
+		if(valorDoSaque > saldo){
+			std::cout << "Ops! Você não possui saldo suficiente." << std::endl;
+		}else{
+			saldo -= valorDoSaque;
+		}
+			 	
  }
 
  void Conta::depositar(float valorADepositar){
@@ -47,12 +42,3 @@ int Conta::numeroDeContas = 0;
 int Conta::getNumeroDeConta(){
     return numeroDeContas;
 }
-
- /*void Conta::setCpfTitular(std::string cpf){
-	cpfTitular = cpf;
-}*/
-
-
- /*void Conta::setNumeroConta(std::string numero){
-	numeroConta = numero;
-}*/

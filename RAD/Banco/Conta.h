@@ -12,13 +12,10 @@ public:
 private:
 	std::string numero;
     Titular titular;
-	//std::string nomeTitular;
-	//std::string cpfTitular;
-
 	float saldo;
+	short int tipoConta;
 
 public:
-	//Conta(std::string numero, std::string nomeTitular, std::string cpfTitular);
 	Conta(std::string numero,Titular titular);
 	void sacar(float valorSacar);
 	void depositar(float valorADepositar);

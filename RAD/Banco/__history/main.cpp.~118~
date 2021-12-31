@@ -18,6 +18,10 @@ int main(){
 	umaConta.depositar(500);
 	umaConta.sacar(200);
 
+	ExibeSaldo(umaConta);
+
+	//cout << "Uma conta: " << umaConta.getSaldo()<< endl;
+
 	Titular outro(Cpf("987.654,321-10"),"Alexandre");
 	Conta outraConta("654321", titular);
 	outraConta.depositar(300);

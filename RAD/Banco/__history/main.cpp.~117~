@@ -16,9 +16,13 @@ int main(){
 
 	Conta umaConta("123456", titular);
 	umaConta.depositar(500);
-	umaConta.sacar(200);
+	umaConta.sacar(200);~
 
-	Titular outro(Cpf("987.654,321-10"),"Alexandre");
+	ExibeSaldo(umaConta);
+
+	//cout << "Uma conta: " << umaConta.getSaldo()<< endl;
+
+	Titular outro(string("987.654,321-10"),"Alexandre");
 	Conta outraConta("654321", titular);
 	outraConta.depositar(300);
 	outraConta.sacar(50);

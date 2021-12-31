@@ -1,0 +1,12 @@
+#include "Funcionario.h"
+#include <iostream>
+
+Funcionario::Funcionario(Cpf cpf, std::string nome, float salario)
+	:Pessoa(cpf, nome),	salario(salario){
+		//std::cout << "Construtor de funcionário" << std::endl;
+
+}
+
+std::string Funcionario::getNome(){
+	return nome;
+}
