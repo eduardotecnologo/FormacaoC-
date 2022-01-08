@@ -109,19 +109,36 @@
     <ItemGroup>
         <CppCompile Include="Conta.cpp">
             <DependentOn>Conta.h</DependentOn>
-            <Suffix>_0</Suffix>
             <BuildOrder>3</BuildOrder>
         </CppCompile>
         <CppCompile Include="Conta.h">
             <DependentOn>Conta.h</DependentOn>
             <BuildOrder>2</BuildOrder>
         </CppCompile>
+        <CppCompile Include="ContaPoupanca.cpp">
+            <DependentOn>ContaPoupanca.h</DependentOn>
+            <BuildOrder>10</BuildOrder>
+        </CppCompile>
         <CppCompile Include="Cpf.cpp">
             <DependentOn>Cpf.h</DependentOn>
             <BuildOrder>5</BuildOrder>
         </CppCompile>
+        <CppCompile Include="Funcionario.cpp">
+            <DependentOn>Funcionario.h</DependentOn>
+            <BuildOrder>6</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="Funcionario.h">
+            <ContainerId>CCompiler</ContainerId>
+            <DependentOn>Funcionario.h</DependentOn>
+            <Suffix>_0</Suffix>
+            <BuildOrder>9</BuildOrder>
+        </CppCompile>
         <CppCompile Include="main.cpp">
             <BuildOrder>1</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="Pessoa.cpp">
+            <DependentOn>Pessoa.h</DependentOn>
+            <BuildOrder>7</BuildOrder>
         </CppCompile>
         <PCHCompile Include="Project1PCH1.h">
             <BuildOrder>0</BuildOrder>
@@ -130,6 +147,11 @@
         <CppCompile Include="Titular.cpp">
             <DependentOn>Titular.h</DependentOn>
             <BuildOrder>4</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="Titular.h">
+            <DependentOn>Titular.h</DependentOn>
+            <Suffix>_0</Suffix>
+            <BuildOrder>8</BuildOrder>
         </CppCompile>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
@@ -161,7 +183,12 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx64\libcgcrtl.dylib" Class="DependencyModule">
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32c270mt.dll" Class="DependencyModule">
+                    <Platform Name="Win32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx64\libcgstl.dylib" Class="DependencyModule">
                     <Platform Name="OSX64">
                         <Overwrite>true</Overwrite>
                     </Platform>
@@ -173,11 +200,6 @@
                 </DeployFile>
                 <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx32\libcgcrtl.dylib" Class="DependencyModule">
                     <Platform Name="OSX32">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx64\libcgstl.dylib" Class="DependencyModule">
-                    <Platform Name="OSX64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -233,8 +255,8 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32c270mt.dll" Class="DependencyModule">
-                    <Platform Name="Win32">
+                <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx64\libcgcrtl.dylib" Class="DependencyModule">
+                    <Platform Name="OSX64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

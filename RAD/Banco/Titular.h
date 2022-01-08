@@ -1,6 +1,9 @@
-//---------------------------------------------------------------------------
+#pragma once
+#include <string>
+#include "Pessoa.h"
+#include "Cpf.h"
 
-#ifndef TitularH
-#define TitularH
-//---------------------------------------------------------------------------
-#endif
+class Titular:public Pessoa{
+	public:
+        Titular(Cpf cpf, std::string nome);
+};

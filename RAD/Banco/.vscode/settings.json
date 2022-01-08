@@ -45,6 +45,8 @@
         "xutility": "cpp"
     },
     "cSpell.words": [
-        "exibe"
-    ]
+        "exibe",
+        "pelo"
+    ],
+    "C_Cpp.errorSquiggles": "Disabled"
 }

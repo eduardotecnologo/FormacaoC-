@@ -11,13 +11,15 @@ public:
 
 private:
 	std::string numero;
-    Titular titular;
-	float saldo;
-	short int tipoConta;
+	Titular titular;
 
-public:
+protected:
+	float saldo;
+
+	public:
 	Conta(std::string numero,Titular titular);
-	void sacar(float valorSacar);
+    ~Conta();
+	virtual void sacar(float valorSacar);
 	void depositar(float valorADepositar);
 	float getSaldo() const;
 };

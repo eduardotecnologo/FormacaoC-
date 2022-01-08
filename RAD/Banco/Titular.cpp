@@ -1,6 +1,4 @@
 #include "Titular.h"
-#include "Pessoa.h"
-#include <iostream>
 
 Titular::Titular(Cpf cpf, std::string nome):Pessoa(cpf, nome){
 

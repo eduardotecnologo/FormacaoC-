@@ -6,14 +6,14 @@ int Conta::numeroDeContas = 0;
   Conta::Conta(std::string numero,Titular titular)
      :numero(numero),
 	 titular(titular),
-	 saldo(0){
+	 saldo(0) {
 	 numeroDeContas++;
 }
 
- void Conta::sacar(float valorASacar){
+  void Conta::sacar(float valorASacar){
 	    if(valorASacar < 15){
-		std::cout << "Ops! Não é possível sacar valores abaixo de R$15,00" << std::endl;
-		return;
+			std::cout << "Ops! Não é possível sacar valores abaixo de R$15,00" << std::endl;
+			return;
 		}
 
 		float tarifaSaque = valorASacar * 0.05;
