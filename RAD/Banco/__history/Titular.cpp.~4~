@@ -1,5 +1,0 @@
-#include "Titular.h"
-
-Titular::Titular(std::string cpf, std::string nome):cpf(cpf), nome(nome){
-
-}

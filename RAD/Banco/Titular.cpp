@@ -1,14 +1,5 @@
 #include "Titular.h"
-#include <iostream>
 
-Titular::Titular(std::string cpf, std::string nome):cpf(cpf), nome(nome){
-    verificaTamanhoNome();
+Titular::Titular(Cpf cpf, std::string nome):Pessoa(cpf, nome){
+
 }
-
-void Titular::verificaTamanhoNome(){
-	if(nome.size() < 5){
-		std::cout << "Ops! Nome muito curto." << std::endl;
-		exit(1);
-	 }
-}
-
