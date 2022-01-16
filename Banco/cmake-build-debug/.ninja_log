@@ -1,0 +1,24 @@
+# ninja log v5
+140	2719	6640516603762318	CMakeFiles/Banco.dir/Conta.cpp.obj	d2a19f7a572030db
+1	1335	6640487739696655	CMakeFiles/Banco.dir/main.cpp.obj	cee7cae79bbf7d79
+1341	2218	6640487748603069	Banco.exe	5fcf84480b27e387
+49	2671	6640633471615128	CMakeFiles/Banco.dir/ContaPoupanca.cpp.obj	394d551a84b74ffa
+146	2700	6640516603762318	CMakeFiles/Banco.dir/Cpf.cpp.obj	14ba98fc84628dbc
+96	2492	6640517179231019	CMakeFiles/Banco.dir/Pessoa.cpp.obj	a3661a1325f50953
+68	2872	6640633474427585	CMakeFiles/Banco.dir/Titular.cpp.obj	6440affd7a924a84
+95	5110	6640542741259483	CMakeFiles/Banco.dir/Funcionario.cpp.obj	f46c80343df07579
+67	2572	6640524421302667	CMakeFiles/Banco.dir/Autenticavel.cpp.obj	629457df37c59a48
+58	2691	6640633472083904	CMakeFiles/Banco.dir/ContaCorrente.cpp.obj	652840b3fed772c8
+68	1181	6640535197361477	CMakeFiles/Banco.dir/DiaDaSemana.cpp.obj	8fc118ec17cff3f5
+11	5102	6640542741103206	CMakeFiles/Banco.dir/Caixa.cpp.obj	f95ddd1a4655036c
+80	2803	6640633473646403	CMakeFiles/Banco.dir/Gerente.cpp.obj	27ee1b07f87c81b3
+7	2153	6640634583970942	build.ninja	7dfaa9650d44ed9b
+21	1889	6640634606001832	CMakeFiles/Banco.dir/Caixa.cpp.obj	f95ddd1a4655036c
+11	1929	6640634605845512	CMakeFiles/Banco.dir/Gerente.cpp.obj	27ee1b07f87c81b3
+6	2330	6640634611001725	CMakeFiles/Banco.dir/Funcionario.cpp.obj	f46c80343df07579
+60	2355	6640639320264929	CMakeFiles/Banco.dir/Conta.cpp.obj	d2a19f7a572030db
+9	1962	6640641780274263	CMakeFiles/Banco.dir/Caixa.cpp.obj	f95ddd1a4655036c
+54	1993	6640641780742992	CMakeFiles/Banco.dir/Gerente.cpp.obj	27ee1b07f87c81b3
+49	2132	6640641782305465	CMakeFiles/Banco.dir/Funcionario.cpp.obj	f46c80343df07579
+44	2234	6640641783399254	CMakeFiles/Banco.dir/main.cpp.obj	cee7cae79bbf7d79
+2235	4552	6640641806524224	Banco.exe	7ea274e23b3f36e5
