@@ -30,6 +30,12 @@ void FazLogin(Autenticavel& alguem, string senha){
     }
 }
 
+ostream& operator << (ostream& cout, const Conta& conta){
+    cout << "O saldo da conta é (operador): " << conta.recuperaSaldo() << endl;
+    cout << "O titular da conta é: " << conta;
+    return cout;
+}
+
 int main(){
     Titular titular(Cpf("123.456.789-10"),"Eduardo", "umasenha");
 
@@ -48,7 +54,10 @@ int main(){
     //umaOutraConta.transferePara(umaConta, 250);
     outraContaCorrente += umaOutraConta;
 
-    ExibeSaldo(umaOutraConta);
+    cout << umaOutraConta;
+    ExibeSaldo(outraContaCorrente);
+
+    //ExibeSaldo(umaOutraConta);
     ExibeSaldo(outraContaCorrente);
 
     setlocale(LC_ALL, "portuguese");
