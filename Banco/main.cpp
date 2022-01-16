@@ -18,7 +18,11 @@ void ExibeSaldo(const Conta& conta){
 }
 
 void RealizaSaque(Conta& conta){
-    conta.sacar(200);
+    //std::pair<Conta::ResultadoSaque, float> resultado = conta.sacar(200);
+    auto resultado = conta.sacar(200);
+    if(resultado.first == Conta::Sucesso){
+        cout << "Novo saldo da conta: " << resultado.second << endl;
+    }
 }
 
 void FazLogin(Autenticavel& alguem, string senha){
@@ -52,7 +56,6 @@ int main(){
 
     ContaCorrente outraContaCorrente("546312", titular);
 
-    //umaOutraConta.transferePara(umaConta, 250);
     outraContaCorrente += umaOutraConta;
 
     cout << umaOutraConta;

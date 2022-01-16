@@ -20,11 +20,11 @@ Conta::~Conta(){
     numeroDeContas--;
 }
 
-void Conta::sacar(float valorASacar){
+std::pair<Conta::ResultadoSaque, float> Conta::sacar(float valorASacar){
     if(valorASacar < 15){
         setlocale(LC_ALL, "portuguese");
         std::cout << "Ops! Não é possível sacar valores abaixo de R$15,00" << std::endl;
-        return;
+        return std::make_pair(ValorNegativo, saldo);
     }
 
     float tarifaDeSaque = valorASacar * taxaDeSaque();
@@ -33,10 +33,11 @@ void Conta::sacar(float valorASacar){
     if(valorDoSaque > saldo){
         setlocale(LC_ALL, "portuguese");
         std::cout << "Ops! Você não possui saldo suficiente." << std::endl;
+        return std::make_pair(SaldoInsuficiente, saldo);
     }else{
         saldo -= valorDoSaque;
+        return std::make_pair(Sucesso, saldo);
     }
-
 }
 
 void Conta::depositar(float valorADepositar){
