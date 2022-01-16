@@ -41,12 +41,12 @@ int main(){
 
     Titular outro(Cpf("987.654,321-10"),"Alexandre", "outrasenha");
     ContaCorrente umaOutraConta("654321", titular);
-    umaOutraConta += 300;
+    (Conta&) umaOutraConta += 300;
 
     ContaCorrente outraContaCorrente("546312", titular);
 
-    umaOutraConta.transferePara(umaConta, 250);
-    umaOutraConta += umaConta;
+    //umaOutraConta.transferePara(umaConta, 250);
+    outraContaCorrente += umaOutraConta;
 
     ExibeSaldo(umaOutraConta);
     ExibeSaldo(outraContaCorrente);
