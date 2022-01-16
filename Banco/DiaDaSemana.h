@@ -4,10 +4,9 @@
 
 #ifndef BANCO_DIADASEMANA_H
 #define BANCO_DIADASEMANA_H
-#pragma once
 
 enum class DiaDaSemana : unsigned char{
-    Domingo, Segunda, Terca, Quarta, Quinta, Sexta, Sábado
+    Domingo, Segunda, Terca, Quarta, Quinta, Sexta, Sabado
 };
 
 #endif //BANCO_DIADASEMANA_H

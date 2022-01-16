@@ -2,13 +2,16 @@
 // Created by EduDeveloper on 16/01/2022.
 //
 
-#pragma once
 #include <iostream>
 #include "Pessoa.h"
 
 Pessoa::Pessoa(Cpf cpf, std::string nome):cpf(cpf), nome(nome){
-    //std::cout << "Construtor de Pessoa" << std::endl;
+    //std::cout << "Construtor de Pessoa: " << std::endl;
     verificaTamanhoNome();
+}
+
+std::string Pessoa::recuperaNome() const{
+    return nome;
 }
 
 void Pessoa::verificaTamanhoNome(){

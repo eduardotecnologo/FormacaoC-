@@ -4,7 +4,6 @@
 
 #ifndef BANCO_PESSOA_H
 #define BANCO_PESSOA_H
-#pragma once
 #include "Cpf.h"
 #include <string>
 
@@ -14,6 +13,7 @@ protected:
     std::string nome;
 public:
     Pessoa(Cpf cpf, std::string nome);
+    std::string recuperaNome() const;
 private:
     void verificaTamanhoNome();
 };
