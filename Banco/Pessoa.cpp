@@ -13,6 +13,7 @@ Pessoa::Pessoa(Cpf cpf, std::string nome):cpf(cpf), nome(nome){
 
 void Pessoa::verificaTamanhoNome(){
     if(nome.size() < 5){
+        setlocale(LC_ALL, "portuguese");
         std::cout << "Ops! Nome muito curto." << std::endl;
         exit(1);
     }

@@ -12,7 +12,7 @@ private:
     std::string numero;
 public:
     Cpf(std::string numero);
-    std::string getNumero();
+    std::string recuperaNumero();
 };
 
 

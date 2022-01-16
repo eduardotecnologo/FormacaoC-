@@ -4,13 +4,15 @@
 
 #include "ContaCorrente.h"
 #include <iostream>
+#include <locale>
 
 ContaCorrente::ContaCorrente(std::string numero, Titular titular): Conta(numero, titular){
 
 }
 
 float ContaCorrente::taxaDeSaque() const{
-    std::cout << "Chamando m�todo Sacar de conta corrente" << std::endl;
+    setlocale(LC_ALL, "portuguese");
+    std::cout << "Chamando método Sacar de conta corrente" << std::endl;
     return 0.05;
 }
 

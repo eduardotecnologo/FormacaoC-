@@ -7,10 +7,10 @@
 #pragma package(smart_init)
 
 Cpf::Cpf(std::string numero):numero(numero){
-    // Valida��o de CPF
+    // Validação de CPF
 }
 
-std::string Cpf::getNumero(){
+std::string Cpf::recuperaNumero(){
     return numero;
 }
 

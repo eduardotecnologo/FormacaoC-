@@ -14,6 +14,4 @@ class Gerente final : public Funcionario, public Autenticavel{
         Gerente(Cpf cpf, std::string nome, float salario, DiaDaSemana diaDoPagamento, std::string senha);
         float bonificacao() const;
 };
-
-
 #endif //BANCO_GERENTE_H
