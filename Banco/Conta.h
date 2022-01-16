@@ -30,5 +30,6 @@ public:
     void operator+=(float valorADepositar);
     float recuperaSaldo() const;
     virtual float taxaDeSaque() const = 0;
+    friend std::ostream& operator << (std::ostream& cout, const Conta& conta);
 };
 #endif //BANCO_CONTA_H
