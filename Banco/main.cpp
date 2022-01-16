@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <locale>
 #include "DiaDaSemana.h"
 #include "Gerente.h"
 #include "Conta.h"
@@ -12,6 +13,7 @@
 using namespace std;
 
 void ExibeSaldo(const Conta& conta){
+    setlocale(LC_ALL, "portuguese");
     std::cout << "O saldo da conta é: " << conta.recuperaSaldo() << std::endl;
 }
 
@@ -23,6 +25,7 @@ void FazLogin(Autenticavel& alguem, string senha){
     if(alguem.autentica(senha)){
         std::cout << "Login realizado com sucesso!" << std::endl;
     }else{
+        setlocale(LC_ALL, "portuguese");
         std::cout << "Ops! Senha inválida!" << std::endl;
     }
 }
@@ -38,15 +41,17 @@ int main(){
 
     Titular outro(Cpf("987.654,321-10"),"Alexandre", "outrasenha");
     ContaCorrente umaOutraConta("654321", titular);
-    umaOutraConta.depositar(300);
+    (Conta&) umaOutraConta += 300;
 
     ContaCorrente outraContaCorrente("546312", titular);
 
-    umaOutraConta.transferePara(umaConta, 250);
+    //umaOutraConta.transferePara(umaConta, 250);
+    outraContaCorrente += umaOutraConta;
 
     ExibeSaldo(umaOutraConta);
     ExibeSaldo(outraContaCorrente);
 
+    setlocale(LC_ALL, "portuguese");
     std::cout << "Número de contas: " << Conta::recuperaNumeroDeContas() << std::endl;
 
     Gerente umGerente(

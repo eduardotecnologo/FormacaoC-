@@ -4,6 +4,7 @@
 
 #include "Conta.h"
 #include <iostream>
+#include <locale>
 
 int Conta::numeroDeContas = 0;
 
@@ -21,6 +22,7 @@ Conta::~Conta(){
 
 void Conta::sacar(float valorASacar){
     if(valorASacar < 15){
+        setlocale(LC_ALL, "portuguese");
         std::cout << "Ops! Não é possível sacar valores abaixo de R$15,00" << std::endl;
         return;
     }
@@ -29,6 +31,7 @@ void Conta::sacar(float valorASacar){
     float valorDoSaque = valorASacar + tarifaDeSaque;
 
     if(valorDoSaque > saldo){
+        setlocale(LC_ALL, "portuguese");
         std::cout << "Ops! Você não possui saldo suficiente." << std::endl;
     }else{
         saldo -= valorDoSaque;
@@ -38,10 +41,14 @@ void Conta::sacar(float valorASacar){
 
 void Conta::depositar(float valorADepositar){
     if(valorADepositar < 10){
+        setlocale(LC_ALL, "portuguese");
         std::cout << "Ops! Não é possível depositar valores abaixo de R$10,00" << std::endl;
     }else{
         saldo += valorADepositar;
     }
+}
+void Conta::operator+=(float valorADepositar){
+    depositar(valorADepositar);
 }
 
 float Conta::recuperaSaldo() const{
