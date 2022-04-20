@@ -25,11 +25,11 @@ int main () {
     palavra_secreta = sorteia_palavra();
 
     while(nao_acertou(palavra_secreta, chutou) && chutes_errados.size() < 5){
-        imprime_erros(chutes_errados);
+        Forca::imprime_erros(chutes_errados);
 
         imprime_palavra(palavra_secreta, chutou);
 
-        chuta(&chutou, &chutes_errados);
+        chuta(chutou, chutes_errados);
     }
 
     cout << "Fim de jogo!" << endl;
@@ -44,7 +44,7 @@ int main () {
         char resposta;
         cin >> resposta;
         if(resposta == 'S'){
-            adiciona_palavra();
+        adiciona_palavra();
         }
     }
     
