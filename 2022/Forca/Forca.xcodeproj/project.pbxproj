@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		F1F5BF4E280B4A120065AD26 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1F5BF4D280B4A120065AD26 /* main.cpp */; };
+		F1F5BF57280B4A820065AD26 /* adiciona_palavra.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1F5BF55280B4A820065AD26 /* adiciona_palavra.cpp */; };
+		F1F5BF5A280B4AAF0065AD26 /* le_arquivo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1F5BF58280B4AAF0065AD26 /* le_arquivo.cpp */; };
+		F1F5BF60280B4AF50065AD26 /* chuta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1F5BF5E280B4AF50065AD26 /* chuta.cpp */; };
+		F1F5BF66280B4B3B0065AD26 /* imprime_erros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1F5BF64280B4B3B0065AD26 /* imprime_erros.cpp */; };
+		F1F5BF69280B4B5F0065AD26 /* imprime_palavra.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1F5BF67280B4B5F0065AD26 /* imprime_palavra.cpp */; };
+		F1F5BF6C280B4B8B0065AD26 /* letra_existe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1F5BF6A280B4B8B0065AD26 /* letra_existe.cpp */; };
+		F1F5BF6F280B4BA80065AD26 /* nao_acertou.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1F5BF6D280B4BA80065AD26 /* nao_acertou.cpp */; };
+		F1F5BF75280B4BEC0065AD26 /* salva_arquivo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1F5BF73280B4BEC0065AD26 /* salva_arquivo.cpp */; };
+		F1F5BF78280B4C100065AD26 /* sorteia_palavra.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1F5BF76280B4C100065AD26 /* sorteia_palavra.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +34,26 @@
 /* Begin PBXFileReference section */
 		F1F5BF4A280B4A120065AD26 /* Forca */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Forca; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F5BF4D280B4A120065AD26 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F1F5BF55280B4A820065AD26 /* adiciona_palavra.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = adiciona_palavra.cpp; sourceTree = "<group>"; };
+		F1F5BF56280B4A820065AD26 /* adiciona_palavra.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = adiciona_palavra.hpp; sourceTree = "<group>"; };
+		F1F5BF58280B4AAF0065AD26 /* le_arquivo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = le_arquivo.cpp; sourceTree = "<group>"; };
+		F1F5BF59280B4AAF0065AD26 /* le_arquivo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = le_arquivo.hpp; sourceTree = "<group>"; };
+		F1F5BF5E280B4AF50065AD26 /* chuta.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = chuta.cpp; sourceTree = "<group>"; };
+		F1F5BF5F280B4AF50065AD26 /* chuta.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = chuta.hpp; sourceTree = "<group>"; };
+		F1F5BF62280B4B1C0065AD26 /* imprime_cabecalho.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = imprime_cabecalho.hpp; sourceTree = "<group>"; };
+		F1F5BF64280B4B3B0065AD26 /* imprime_erros.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = imprime_erros.cpp; sourceTree = "<group>"; };
+		F1F5BF65280B4B3B0065AD26 /* imprime_erros.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = imprime_erros.hpp; sourceTree = "<group>"; };
+		F1F5BF67280B4B5F0065AD26 /* imprime_palavra.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = imprime_palavra.cpp; sourceTree = "<group>"; };
+		F1F5BF68280B4B5F0065AD26 /* imprime_palavra.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = imprime_palavra.hpp; sourceTree = "<group>"; };
+		F1F5BF6A280B4B8B0065AD26 /* letra_existe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = letra_existe.cpp; sourceTree = "<group>"; };
+		F1F5BF6B280B4B8B0065AD26 /* letra_existe.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = letra_existe.hpp; sourceTree = "<group>"; };
+		F1F5BF6D280B4BA80065AD26 /* nao_acertou.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = nao_acertou.cpp; sourceTree = "<group>"; };
+		F1F5BF6E280B4BA80065AD26 /* nao_acertou.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = nao_acertou.hpp; sourceTree = "<group>"; };
+		F1F5BF73280B4BEC0065AD26 /* salva_arquivo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = salva_arquivo.cpp; sourceTree = "<group>"; };
+		F1F5BF74280B4BEC0065AD26 /* salva_arquivo.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = salva_arquivo.hpp; sourceTree = "<group>"; };
+		F1F5BF76280B4C100065AD26 /* sorteia_palavra.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sorteia_palavra.cpp; sourceTree = "<group>"; };
+		F1F5BF77280B4C100065AD26 /* sorteia_palavra.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sorteia_palavra.hpp; sourceTree = "<group>"; };
+		F1F5BF7A280B58E50065AD26 /* palavras.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = palavras.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +87,26 @@
 			isa = PBXGroup;
 			children = (
 				F1F5BF4D280B4A120065AD26 /* main.cpp */,
+				F1F5BF55280B4A820065AD26 /* adiciona_palavra.cpp */,
+				F1F5BF56280B4A820065AD26 /* adiciona_palavra.hpp */,
+				F1F5BF58280B4AAF0065AD26 /* le_arquivo.cpp */,
+				F1F5BF59280B4AAF0065AD26 /* le_arquivo.hpp */,
+				F1F5BF5E280B4AF50065AD26 /* chuta.cpp */,
+				F1F5BF5F280B4AF50065AD26 /* chuta.hpp */,
+				F1F5BF62280B4B1C0065AD26 /* imprime_cabecalho.hpp */,
+				F1F5BF64280B4B3B0065AD26 /* imprime_erros.cpp */,
+				F1F5BF65280B4B3B0065AD26 /* imprime_erros.hpp */,
+				F1F5BF67280B4B5F0065AD26 /* imprime_palavra.cpp */,
+				F1F5BF68280B4B5F0065AD26 /* imprime_palavra.hpp */,
+				F1F5BF6A280B4B8B0065AD26 /* letra_existe.cpp */,
+				F1F5BF6B280B4B8B0065AD26 /* letra_existe.hpp */,
+				F1F5BF6D280B4BA80065AD26 /* nao_acertou.cpp */,
+				F1F5BF6E280B4BA80065AD26 /* nao_acertou.hpp */,
+				F1F5BF73280B4BEC0065AD26 /* salva_arquivo.cpp */,
+				F1F5BF74280B4BEC0065AD26 /* salva_arquivo.hpp */,
+				F1F5BF76280B4C100065AD26 /* sorteia_palavra.cpp */,
+				F1F5BF77280B4C100065AD26 /* sorteia_palavra.hpp */,
+				F1F5BF7A280B58E50065AD26 /* palavras.txt */,
 			);
 			path = Forca;
 			sourceTree = "<group>";
@@ -120,6 +169,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1F5BF4E280B4A120065AD26 /* main.cpp in Sources */,
+				F1F5BF57280B4A820065AD26 /* adiciona_palavra.cpp in Sources */,
+				F1F5BF5A280B4AAF0065AD26 /* le_arquivo.cpp in Sources */,
+				F1F5BF78280B4C100065AD26 /* sorteia_palavra.cpp in Sources */,
+				F1F5BF69280B4B5F0065AD26 /* imprime_palavra.cpp in Sources */,
+				F1F5BF60280B4AF50065AD26 /* chuta.cpp in Sources */,
+				F1F5BF6C280B4B8B0065AD26 /* letra_existe.cpp in Sources */,
+				F1F5BF75280B4BEC0065AD26 /* salva_arquivo.cpp in Sources */,
+				F1F5BF6F280B4BA80065AD26 /* nao_acertou.cpp in Sources */,
+				F1F5BF66280B4B3B0065AD26 /* imprime_erros.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

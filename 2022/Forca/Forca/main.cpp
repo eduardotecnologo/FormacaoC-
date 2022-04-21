@@ -47,6 +47,5 @@ int main () {
         adiciona_palavra();
         }
     }
-    
     cin.get();
 }
