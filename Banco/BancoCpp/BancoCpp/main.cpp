@@ -1,15 +1,24 @@
-//
-//  main.cpp
-//  BancoCpp
-//
-//  Created by Eduardo Alexandre on 20/04/22.
-//  Copyright © 2022 Eduardo Alexandre. All rights reserved.
-//
-
 #include <iostream>
+#include <string>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+#include "Conta.hpp"
+
+using namespace std;
+
+int main() {
+    Conta umaConta("123","023.548.541-16","Eduardo");
+    umaConta.depositar(500);
+    umaConta.sacar(200);
+    
+    cout << "Uma conta: " << umaConta.getSaldo() << endl;
+    
+    Conta umaOutraConta("321","321.854.541-20","Alexandre");
+    umaOutraConta.depositar(1000);
+    umaOutraConta.sacar(500);
+    
+    cout << "Uma OutraConta: " << umaOutraConta.getSaldo() << endl;
+    
+    cout << " Número de Contas: " << umaConta.numeroDeContas << endl;
+    
     return 0;
 }
