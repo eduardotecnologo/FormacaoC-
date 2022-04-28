@@ -23,6 +23,9 @@ public:
     void depositar(float valorDepositar);
     float getSaldo() const;
     void setNomeTitular(std::string nome);
+    
+private:
+    void verificaTamnhoNome();
 };
 
 #endif /* Conta_hpp */

@@ -13,6 +13,7 @@ Conta::Conta(std::string numero, std::string cpfTitular, std::string nomeTitular
     this->nomeTitular = nomeTitular;
     this->saldo = 0;*/
 {
+    verificaTamnhoNome();
     numeroDeContas++;
 }
 
@@ -40,3 +41,9 @@ float Conta::getSaldo() const{
     return saldo;
 }
 
+void Conta::verificaTamnhoNome(){
+    if(nomeTitular.size() < 5){
+         std::cout << "Ops! Nome muito curto!" << std::endl;
+        exit(1);
+    }
+}

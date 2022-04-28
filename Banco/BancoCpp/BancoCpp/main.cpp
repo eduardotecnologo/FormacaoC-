@@ -12,7 +12,7 @@ int main() {
     
     cout << "Uma conta: " << umaConta.getSaldo() << endl;
     
-    Conta umaOutraConta("321","321.854.541-20","Alexandre");
+    Conta umaOutraConta("321","321.854.541-20","Ale");
     umaOutraConta.depositar(1000);
     umaOutraConta.sacar(500);
     
