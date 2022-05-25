@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A279ABC283E50CA00EAFCCD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A279ABB283E50CA00EAFCCD /* main.cpp */; };
+		4A279AC4283E6BAC00EAFCCD /* Conta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A279AC3283E6BAC00EAFCCD /* Conta.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		4A279AB8283E50CA00EAFCCD /* AppBanco */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AppBanco; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A279ABB283E50CA00EAFCCD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4A279AC2283E6B0100EAFCCD /* Conta.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Conta.hpp; sourceTree = "<group>"; };
+		4A279AC3283E6BAC00EAFCCD /* Conta.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Conta.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				4A279ABB283E50CA00EAFCCD /* main.cpp */,
+				4A279AC2283E6B0100EAFCCD /* Conta.hpp */,
+				4A279AC3283E6BAC00EAFCCD /* Conta.cpp */,
 			);
 			path = AppBanco;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A279ABC283E50CA00EAFCCD /* main.cpp in Sources */,
+				4A279AC4283E6BAC00EAFCCD /* Conta.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
